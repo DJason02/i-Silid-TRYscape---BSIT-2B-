@@ -1,0 +1,18 @@
+<!-- notes_list/notes_app/templates/notes_app/notesitem_confirm_delete.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h3>Delete Notes Item</h3>
+
+<p>Are you sure you want to delete the item: <b>{{ object.title }}</b>
+    <p>from the list <i>{{ notes_list.title }}</i>?</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input value="Yes,delete." type="submit">
+        <input value="Cancel" type="button" onclick="location.href='{% url "notes-list" notes_list.id %}';" />
+    </form>
+
+    {% endblock %}
