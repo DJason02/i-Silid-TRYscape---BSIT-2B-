@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block content %}
+
+<div class="container3 mt-3">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 bg-light">
+      <h3 class="ContactHead">Contact Us</h3><hr><br>
+
+      <form action="" method="post">{% csrf_token %}
+        <div class="form-group">
+          <div class="form-group mt-2">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              class="form-control"
+              required
+            />
+            <input
+            type="text"
+            name="Subject"
+            placeholder="Subject"
+            class="form-control"
+            required
+          />
+            
+          </div>
+        </div>
+        <div class="form-group mt-2">
+            <label>Message</label><br>
+          <textarea class="form-control1" placeholder="How can we help you?" name="desc" cols="10" rows="5"></textarea>
+        </div>
+        <div class="d-grid gap-2 mt-4">
+          <button class="btn btn-dark" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+{% endblock %}

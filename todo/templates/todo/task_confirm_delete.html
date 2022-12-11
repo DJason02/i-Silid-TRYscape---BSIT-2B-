@@ -1,0 +1,14 @@
+{%extends "base.html"%} 
+{% block content%} 
+<div class="header-bar1">
+	<a href="{%url 'tasks'%}"><button>&#8592; Back</button></a>
+</div>
+<div class="card-body1">
+	<form method="POST">
+		{%csrf_token%}
+		<p>Are you sure you want to delete? {{task}}</p>
+		<input type="submit" value="Delete" class="button"/>
+	</form>
+</div>
+
+{%endblock content%}
