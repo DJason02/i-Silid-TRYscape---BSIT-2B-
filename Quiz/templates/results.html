@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="container">
+<h2>Results for Quiz : <span class="badge badge-pill badge-secondary">{{ quiz.quiz_name }}</span></h2>
+<br>
+<table class="table">
+  <thead>
+    <th>User</th>
+    <th>Taken On</th>
+    <th>Score</th>
+   </thead>
+   <tbody>
+   	{% for score in scores %}
+   	   	<tr>
+	   		<td>{{ score.user.first_name }}</td>
+	   		<td>{{  score.taken_on }}</td>
+	   		<td>{{ score.score }} / {{ score.quiz.no_of_ques }}</td>
+   		</tr>
+   	{% endfor %}
+   </tbody>
+</table>
+<a class="backtoyou" href="{% url 'dashboard' %}">
+  <button class="gotodash-btn">Go to Dashboard</button>
+</a>
+</div>
+{% endblock %}
