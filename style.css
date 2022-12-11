@@ -279,6 +279,7 @@ ul.nav-nav-tabs li a{
 
 }
 table{
+	margin-top: 10px;
 	border-collapse: collapse;
 }
 .table {
@@ -288,18 +289,30 @@ table{
     background-color: transparent;
 }
 .table thead th {
-    vertical-align: bottom;
+    vertical-align: middle;
     border-bottom: 2px solid #dee2e6;
 	background-color: #27dfa4;
-	
 }
 .table td, .table th {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
 }
-th {
-    text-align: inherit;
+.table1 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+.table1 thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+	background-color: #f37c7c;
+}
+.table1 td, .table1 th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
 }
 .align-middle {
     text-align: center;
@@ -321,14 +334,15 @@ span {
 a.backtoyou{
 	justify-content: center;
 }
-button.gotodash-btn{
-	margin-left: 35%;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	position: relative;
-	top: 50%;
-	justify-content: center;
+button.gotodash-btn {
+    margin-left: 42%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 a {
@@ -371,22 +385,21 @@ button.ghostup {
 }
 form {
 
-	background-color: rgb(248, 248, 248);
-
-	align-items: stretch;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	max-width: 80%;
-	height: 100%;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border-radius: 10px;
-	border-style: solid;
-	margin: auto;
-	border-color: #777777;
-	margin: auto;
+background-color: rgb(248, 248, 248);
+display: flex;
+display: flex;
+padding: 0 50px;
+max-width: 80%;
+height: 100%;
+text-align: center;
+padding-top: 15px;
+padding-bottom: 15px;
+border-radius: 10px;
+border-style: solid;
+margin: auto;
+border-color: #777777;
+margin: auto;
+flex-direction: column;
 }
 
 input {
@@ -419,13 +432,13 @@ input:checked{
 	max-width: 100%;
 	min-height: 200px;
 	margin: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	background-color: white; 
+	background-color: white;
 	border-radius: 15px;
 	border-width: 1px;
 	border-style: solid;
@@ -433,17 +446,86 @@ input:checked{
 }
 
 
-.form-group{
-	padding: 10px;
-	}
+.container2 {
+	padding: 100px 0;
+	position: center;
+	justify-content: center;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 200px;
+	margin: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
 
+	border-radius: 15px;
+	border-width: 1px;
+}
+.container3 {
+	padding: 100px 0;
+	position: center;
+	justify-content: center;
+	overflow: hidden;
+	max-width: 100%;
+	min-height: 200px;
+	margin: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	border-radius: 15px;
+	border-width: 1px;
+}
+.task-items-wrapper {
+	position: center;
+	justify-content: center;
+	overflow: hidden;
+	width: 900px;
+	max-width: 100%;
+	min-height: 200px;
+	margin: auto;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	border-radius: 15px;
+	border-width: 1px;
+}
+.form-group{
+	padding: 0px;
+}
+.form-control1{
+	width: 100%;
+	height: 106px;
+	padding: 1%;
+}
+h3.ContactHead{
+	align-content: center;
+	text-align: center;
+	color: #df9927;
+}
+div.row{
+
+}
 .form-container {
 	position: center;
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
 }
-
+div.card-body1 p{
+	color: red;
+}
 
 .social-container {
 	margin: 20px 0;
@@ -470,19 +552,20 @@ input:checked{
 	text-transform: uppercase;
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header-bar{
+	text-align: center;
+}
+.header-bar1{
+	text-align: inherit;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-bottom: 1%;
+}
+.add-button .add{
+	align-content: center;
+	margin-top: 10px;
+	margin-left: 43%;	
+}
 
 
 
