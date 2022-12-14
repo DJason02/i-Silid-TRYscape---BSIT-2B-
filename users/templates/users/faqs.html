@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <head>
+    <title>FAQ</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'users\css\Faqs.css' %}">
+    <script src="{% static 'users/js/Faqs.js' %}"defer></script>
+  </head>
+  <body>
+    <div class="FAQscontainer">
+      <b><FAQhead>Frequently Asked Questions</FAQhead></b>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">How to generate quizzes?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                You are able to generate quizzes through relating questionaires from your notes itself! Just click the create quiz and input your questions and choices.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">Does the notes can be personalized?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Yes, through adding or creating a new notes, you can add the title and tags of your notes, on editing the notes, you are able to add images, links, and add bullets or numbers on them!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title">How does To-Do List helps me?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Through utilizing this function, you can track your progress on your pending activities, and keep notified as well! It increases your productivity as well!
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title">Do I able to print out my notes from the site?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Yes, through exporting the notes into PDF file, you can have your own hard copy of notes made.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Does the website is free to use for all?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Yes! Its very friendly to all ages that wants to take notes or list tasks to improve ones productivity! You'll need to sign up with your desired account, then access all functionalities available!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+{% endblock content %}
